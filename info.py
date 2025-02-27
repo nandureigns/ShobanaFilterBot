@@ -14,19 +14,19 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '18530329'))
+API_HASH = environ.get('API_HASH', 'edefebe693e029e6aca6c7c1df2745ec')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7571351029:AAEMsG5o_O5-Js_HHDN6Kn9n-ceaT8cEfMk')
 
 # Bot settings
 BOT_START_TIME = time()
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://envs.sh/YxC.jpg https://envs.sh/YxR.jpg https://envs.sh/YxH.jpg https://envs.sh/Yxk.jpg https://envs.sh/Yxv.jpg https://envs.sh/YxU.jpg https://envs.sh/Yx4.jpg')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/I4Q.jpg https://envs.sh/I4h.jpg https://envs.sh/I4D.jpg https://envs.sh/BrZ.jpg https://envs.sh/I1-.jpg https://envs.sh/Skg.jpg https://envs.sh/SkN.jpg https://envs.sh/Skv.jpg https://envs.sh/Skr.jpg https://envs.sh/Sk8.jpg https://envs.sh/Skl.jpg https://envs.sh/SkC.jpg https://envs.sh/SkY.jpg https://graph.org/file/06f2898a28bd8f434dbe4.jpg https://graph.org/file/0b874d158ea16a19ee1a6.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1892771262').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002097504396').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1404622369').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001760573517').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -35,15 +35,15 @@ AUTH_CHANNEL = environ.get('AUTH_CHANNEL')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mn_files')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://dboss:dboss1@cluster0.j3yv1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "dboss")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'kn_files)
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002167427268'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mnbots_support')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001930856812)
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'KnMoviez')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', 'False')), False)
-IMDB = is_enabled((environ.get('IMDB', 'False')), False)
+IMDB = is_enabled((environ.get('IMDB', 'True')), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', 'True')), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CUSTOM_FILE_CAPTION}") 
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "📂 <em>File Name</em>: <code>{file_name}</code>\n\n ♻ <em>File Size</em>:{file_size} \n\n <b><i>Latest Movies -</i> </b>")

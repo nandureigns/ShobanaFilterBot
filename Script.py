@@ -110,8 +110,7 @@ Added By - {}
     RESULT_TXT="""<blockquote> Hey,     </blockquote>
 <blockquote>Jᴜsᴛ Sᴇᴇ Wʜᴀᴛ I Found Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ </blockquote>"""
 
-    CUSTOM_FILE_CAPTION = """<pre>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
-FɪʟᴇSɪᴢᴇ : {file_size}
+    CUSTOM_FILE_CAPTION = """<pre><b>@KnMoviez {file_name} </b>
 </pre>"""
 
     
